@@ -2,20 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.section_1_primary {
-  background-color: #f1edfd;
-}
-.section_1_secondary {
-  background-color: #e4dbfa;
-}
 .section_1_secondary_wishlist_cards .wishlist_card_1 {
   width: 381.58px;
   height: 125.688px;
   transform: rotate(4.29deg) translateY(-110%);
   flex-shrink: 0;
-}
-.progress_track_1 {
-  background-color: #ce30ff;
 }
 .section_1_secondary_wishlist_cards .wishlist_card_2 {
   width: 529.066px;
@@ -23,21 +14,11 @@
   transform: rotate(-2.06deg);
   flex-shrink: 0;
 }
-.progress_track_2{
-  background-color: #667EF7;
-}
 .section_1_secondary_wishlist_cards .wishlist_card_3{
   width: 381.58px;
   height: 125.688px;
   transform: rotate(-6.114deg) translateY(115%);
   flex-shrink: 0;
-}
-.progress_track_3{
-  background-color: #F66140;
-}
-.card_item_primary img {
-  height: 100%;
-  width: 100%;
 }
 .decor1{
   transform: translateY(-750%) translateX(1000%);
