@@ -558,6 +558,14 @@ video {
   margin: 0.25rem;
 }
 
+.m-20 {
+  margin: 5rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -571,6 +579,11 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .flex {
@@ -609,6 +622,10 @@ video {
   width: 91.666667%;
 }
 
+.w-3\/12 {
+  width: 25%;
+}
+
 .w-9\/12 {
   width: 75%;
 }
@@ -623,6 +640,14 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -665,6 +690,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-none {
+  border-style: none;
 }
 
 .border-gray-100 {
@@ -716,6 +745,14 @@ video {
   padding: 1.25rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -724,6 +761,10 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .align-baseline {
@@ -739,8 +780,18 @@ video {
   line-height: 1;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -757,8 +808,16 @@ video {
   font-weight: 700;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.text-bmc-secondary-font {
+  color: #222222B2;
 }
 
 .section_1_secondary_wishlist_cards .wishlist_card_1 {
@@ -792,6 +851,14 @@ video {
 
 .decor3{
   transform: translateY(750%) translateX(-1200%);
+}
+
+.workflow-line1{
+  transform: rotate(180deg) translateY(150%) translateX(-185%);
+}
+
+.workflow-line2{
+  transform: translateY(-250%) translateX(100%);
 }
 
 @media (prefers-color-scheme: dark) {
