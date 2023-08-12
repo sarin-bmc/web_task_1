@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "CircularXX";
+  src: url(./assets/font/circular/CircularXXWeb-Regular.woff) format("woff"),
+    url(./assets/font/circular/CircularXXWeb-Regular.woff2) format("woff2");
+    font-weight: normal;
+}
+@font-face {
+  font-family: "CircularXX";
+  src: url(./assets/font/circular/CircularXXWeb-Medium.woff) format("woff"),
+    url(./assets/font/circular/CircularXXWeb-Medium.woff2) format("woff2");
+    font-weight: 500;
+}
+@font-face {
+  font-family: "CircularXX";
+  src: url(./assets/font/circular/CircularXXWeb-Book.woff) format("woff"),
+    url(./assets/font/circular/CircularXXWeb-Book.woff2) format("woff2");
+    font-weight: 350;
+}
+@font-face {
+  font-family: "CircularXX";
+  src: url(./assets/font/circular/CircularXXWeb-Bold.woff) format("woff"),
+    url(./assets/font/circular/CircularXXWeb-Bold.woff2) format("woff2");
+    font-weight: bold;
+}
+@font-face {
+  font-family: "CircularXX";
+  src: url(./assets/font/circular/CircularXXWeb-Black.woff) format("woff"),
+    url(./assets/font/circular/CircularXXWeb-Black.woff2) format("woff2");
+    font-weight: 900;
+}
+
 .section_1_secondary_wishlist_cards .wishlist_card_1 {
   width: 381.58px;
   height: 125.688px;
@@ -14,25 +45,25 @@
   transform: rotate(-2.06deg);
   flex-shrink: 0;
 }
-.section_1_secondary_wishlist_cards .wishlist_card_3{
+.section_1_secondary_wishlist_cards .wishlist_card_3 {
   width: 381.58px;
   height: 125.688px;
   transform: rotate(-6.114deg) translateY(115%);
   flex-shrink: 0;
 }
-.decor1{
+.decor1 {
   transform: translateY(-750%) translateX(1000%);
 }
-.decor2{
+.decor2 {
   transform: translateY(-820%) translateX(-1400%);
 }
-.decor3{
+.decor3 {
   transform: translateY(750%) translateX(-1200%);
 }
 
-.workflow-line1{
+.workflow-line1 {
   transform: rotate(180deg) translateY(150%) translateX(-185%);
 }
-.workflow-line2{
+.workflow-line2 {
   transform: translateY(-250%) translateX(100%);
 }

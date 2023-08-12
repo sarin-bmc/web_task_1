@@ -18,6 +18,9 @@ module.exports = {
             'font':'#222222B2'
           }
         }
+      },
+      fontFamily:{
+        'circular':'CircularXX'
       }
     },
   },
