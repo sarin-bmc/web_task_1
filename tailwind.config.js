@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       fontFamily:{
-        'circular':'CircularXX'
+        'circular':['Circular','sans-serif']
       }
     },
   },

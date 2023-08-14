@@ -2,35 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "CircularXX";
-  src: url(./assets/font/circular/CircularXXWeb-Regular.woff) format("woff"),
-    url(./assets/font/circular/CircularXXWeb-Regular.woff2) format("woff2");
+@layer base {
+  @font-face {
+    font-family: "Circular";
+    src: url(./assets/font/circular/CircularXXWeb-Regular.woff) format("woff"),
+      url(./assets/font/circular/CircularXXWeb-Regular.woff2) format("woff2");
     font-weight: normal;
-}
-@font-face {
-  font-family: "CircularXX";
-  src: url(./assets/font/circular/CircularXXWeb-Medium.woff) format("woff"),
-    url(./assets/font/circular/CircularXXWeb-Medium.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url(./assets/font/circular/CircularXXWeb-Medium.woff) format("woff"),
+      url(./assets/font/circular/CircularXXWeb-Medium.woff2) format("woff2");
     font-weight: 500;
-}
-@font-face {
-  font-family: "CircularXX";
-  src: url(./assets/font/circular/CircularXXWeb-Book.woff) format("woff"),
-    url(./assets/font/circular/CircularXXWeb-Book.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url(./assets/font/circular/CircularXXWeb-Book.woff) format("woff"),
+      url(./assets/font/circular/CircularXXWeb-Book.woff2) format("woff2");
     font-weight: 350;
-}
-@font-face {
-  font-family: "CircularXX";
-  src: url(./assets/font/circular/CircularXXWeb-Bold.woff) format("woff"),
-    url(./assets/font/circular/CircularXXWeb-Bold.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url(./assets/font/circular/CircularXXWeb-Bold.woff) format("woff"),
+      url(./assets/font/circular/CircularXXWeb-Bold.woff2) format("woff2");
     font-weight: bold;
-}
-@font-face {
-  font-family: "CircularXX";
-  src: url(./assets/font/circular/CircularXXWeb-Black.woff) format("woff"),
-    url(./assets/font/circular/CircularXXWeb-Black.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Circular";
+    src: url(./assets/font/circular/CircularXXWeb-Black.woff) format("woff"),
+      url(./assets/font/circular/CircularXXWeb-Black.woff2) format("woff2");
     font-weight: 900;
+  }
 }
 
 .section_1_secondary_wishlist_cards .wishlist_card_1 {
