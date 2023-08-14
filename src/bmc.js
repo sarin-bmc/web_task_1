@@ -16,3 +16,19 @@ const toggleFaq = (boxId) => {
   toggleButton.getElementsByClassName("faq-button-add")[0].classList.remove("hidden");
   return;
 };
+const toggleNav = ()=>{
+  var toggleIcon = document.getElementById('toggle_icon');
+  var navbar = document.getElementsByClassName('navbar-inner')[0];
+  if(navbar.classList.contains("hidden")){
+    navbar.classList.remove('hidden')
+    toggleIcon.classList.add('hidden')
+    toggleIcon.getElementsByClassName('toggle-arrow')[0].classList.remove('rotate-90')
+    toggleIcon.getElementsByClassName('toggle-arrow')[0].classList.add('-rotate-90')
+    return;
+  }
+  navbar.classList.add('hidden')
+  toggleIcon.classList.remove('hidden')
+    toggleIcon.getElementsByClassName('toggle-arrow')[0].classList.add('rotate-90')
+    toggleIcon.getElementsByClassName('toggle-arrow')[0].classList.remove('-rotate-90')
+    return;
+}
