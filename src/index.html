@@ -1148,20 +1148,117 @@
     </section>
     <!-- section 5 end-->
     <!-- section 6 -->
-    <section class="section_6 w-screen font-circular">
-      <div class="section_6_inner w-full py-24 px-36">
+    <section class="section_6 w-screen font-circular flex items-center justify-center">
+      <div class="section_6_inner w-8/12 py-20 px-20 grid grid-cols-1 gap-5">
         <!-- faq box 1 -->
-        <div class="faq-box border border-black rounded-full px-8 py-5 grid grid-cols-1 my-">
-          <div class="faq-box-header flex">
-            <div class="faq-box-header-content font-bold text-2xl">
+        <div class="faq-box border border-gray-200 rounded-[44px] grid grid-cols-1" id="faq-box-1" >
+          <div class="faq-box-header flex items-center justify-between px-3 py-3 text-[#332E3C]">
+            <div class="faq-box-header-content font-bold text-2xl px-5">
               Who uses Buy Me a Coffee?
             </div>
-            <button type="button" class="faq-box-header-toggle"></button>
+            <button type="button" class="faq-box-header-toggle hover:opacity-80" onclick="toggleFaq('faq-box-1')">
+              <svg class="faq-button-add" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="32" fill="#F5F4F6"/>
+                <path d="M32 22V42" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+                <path d="M42 32L22 32" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              <svg class="faq-button-minus hidden" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="32" fill="#F5F4F6"/>
+                <path d="M42 32L22 32" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="faq-box-description-wrapper w-full hidden">
+            <div class="faq-box-description flex items-center justify-center px-3 py-3 text-[#4D4A53] font-normal text-xl ">
+              <div class="faq-box-description-content px-5 pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ab reiciendis dolorum voluptates iure quas optio similique voluptatum consectetur est? Magnam quo consequatur error eos necessitatibus, nemo quasi ducimus harum?
+              </div>
+            </div>
           </div>
         </div>
-
+        <!-- faq box 2 -->
+        <div class="faq-box border border-gray-200 rounded-[44px] grid grid-cols-1" id="faq-box-2" >
+          <div class="faq-box-header flex items-center justify-between px-3 py-3 text-[#332E3C]">
+            <div class="faq-box-header-content font-bold text-2xl px-5">
+              Is there a fee to use Buy Me a Coffee?
+            </div>
+            <button type="button" class="faq-box-header-toggle hover:opacity-80" onclick="toggleFaq('faq-box-2')">
+              <svg class="faq-button-add" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="32" fill="#F5F4F6"/>
+                <path d="M32 22V42" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+                <path d="M42 32L22 32" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              <svg class="faq-button-minus hidden" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="32" fill="#F5F4F6"/>
+                <path d="M42 32L22 32" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="faq-box-description-wrapper w-full hidden">
+            <div class="faq-box-description flex items-center justify-center px-3 py-3 text-[#4D4A53] font-normal text-xl ">
+              <div class="faq-box-description-content px-5 pb-3">
+                Anyone with an audience. Youtubers, musicians, podcasters, writers, program nonprofits, cosplayers, you name it. More than 500,000 creators and millions of their fans are on Buy Me a Coffee.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- faq box 3 -->
+        <div class="faq-box border border-gray-200 rounded-[44px] grid grid-cols-1" id="faq-box-3" >
+          <div class="faq-box-header flex items-center justify-between px-3 py-3 text-[#332E3C]">
+            <div class="faq-box-header-content font-bold text-2xl px-5">
+              Do I have complete ownership of my supporters?
+            </div>
+            <button type="button" class="faq-box-header-toggle hover:opacity-80" onclick="toggleFaq('faq-box-3')">
+              <svg class="faq-button-add" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="32" fill="#F5F4F6"/>
+                <path d="M32 22V42" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+                <path d="M42 32L22 32" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              <svg class="faq-button-minus hidden" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="32" fill="#F5F4F6"/>
+                <path d="M42 32L22 32" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="faq-box-description-wrapper w-full hidden">
+            <div class="faq-box-description flex items-center justify-center px-3 py-3 text-[#4D4A53] font-normal text-xl ">
+              <div class="faq-box-description-content px-5 pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ab reiciendis dolorum voluptates iure quas optio similique voluptatum consectetur est? Magnam quo consequatur error eos necessitatibus, nemo quasi ducimus harum?
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- faq box 4 -->
+        <div class="faq-box border border-gray-200 rounded-[44px] grid grid-cols-1" id="faq-box-4" >
+          <div class="faq-box-header flex items-center justify-between px-3 py-3 text-[#332E3C]">
+            <div class="faq-box-header-content font-bold text-2xl px-5">
+              How do I contact Buy Me a Coffee?
+            </div>
+            <button type="button" class="faq-box-header-toggle group hover:opacity-80" onclick="toggleFaq('faq-box-4')">
+              <svg class="faq-button-add " xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="32" fill="#F5F4F6"/>
+                <path d="M32 22V42" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+                <path d="M42 32L22 32" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              <svg class="faq-button-minus hidden" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="32" fill="#F5F4F6"/>
+                <path d="M42 32L22 32" stroke="#222222" stroke-opacity="0.92" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="faq-box-description-wrapper w-full hidden">
+            <div class="faq-box-description flex items-center justify-center px-3 py-3 text-[#4D4A53] font-normal text-xl ">
+              <div class="faq-box-description-content px-5 pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ab reiciendis dolorum voluptates iure quas optio similique voluptatum consectetur est? Magnam quo consequatur error eos necessitatibus, nemo quasi ducimus harum?
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- section 6 end -->
+
+    <!-- javascript -->
+    <script src="./bmc.js"></script>
   </body>
 </html>
