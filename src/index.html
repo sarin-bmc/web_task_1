@@ -9,14 +9,14 @@
   <body>
     <!-- nav bar -->
     <nav
-      class="navbar w-screen fixed top-0 left-0 z-10 flex items-center justify-center"
+      class="navbar w-screen fixed top-0 left-0 z-10 flex-row lg:flex items-center justify-center"
     >
       <div
-        class="responsive-navbar-innner md:hidden w-screen flex items-center justify-end m-5"
+        class="responsive-navbar-innner md:hidden w-screen flex items-center justify-end mr-15"
       >
-        <div id="toggle_icon" class=" flex items-center justify-center cursor-pointer" onclick="toggleNav()">
+        <div id="toggle_icon" class=" flex items-center justify-center cursor-pointer m-5" onclick="toggleNav()">
           <svg
-            class="mx-2 cursor-pointer"
+            class=" cursor-pointer h-5"
             xmlns="http://www.w3.org/2000/svg"
             width="26"
             height="37"
@@ -102,14 +102,14 @@
         class="navbar-inner w-full md:w-11/12 h-screen md:h-[50px] bg-white md:rounded-full md:mt-7 px-5 py-8 hidden md:flex items-center justify-between"
       >
         <div class="navbar-left flex-row md:flex items-center justify-center">
+          <div class="header-icon flex justify-end md:justify-center items-center cursor-pointer" onclick="toggleNav()">
           <svg
-            class="mx-2 cursor-pointer"
+            class="mx-2"
             xmlns="http://www.w3.org/2000/svg"
             width="26"
             height="37"
             viewBox="0 0 26 37"
             fill="none"
-            onclick="toggleNav()"
           >
             <path
               d="M22.4201 9.23284L22.3953 9.21822L22.3378 9.20068C22.3609 9.22021 22.3899 9.23152 22.4201 9.23284Z"
@@ -168,20 +168,37 @@
               fill="#222222"
             />
           </svg>
-          <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="7"
+            height="11"
+            viewBox="0 0 7 11"
+            fill="none"
+            class="-rotate-90 toggle-arrow md:hidden"
+          >
+            <path
+              d="M1 1L5.5 5.5L1 10"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          </div>
+          <div class="py-2 md:py-0">
             <a class="mx-3 cursor-pointer hover:opacity-80">FAQ</a>
           </div>
-          <div>
-            <a class="mx-3 cursor-pointer hover:opacity-80">Explore creators</a>
+          <div class="py-2 md:py-0">
+            <a class="mx-3  cursor-pointer hover:opacity-80">Explore creators</a>
           </div>
-          <div>
-            <a class="mx-3 cursor-pointer hover:opacity-80">Features</a>
+          <div class="py-2 md:py-0">
+            <a class="px-3 cursor-pointer hover:opacity-80">Features</a>
           </div>
         </div>
-        <div class="navbar-right flex-row md:flex items-center justify-center">
-          <div>
+        <div class="navbar-right flex-row md:flex items-center justify-center mt-8 md:mt-0">
+          <div class="py-2 md:py-0">
             <a class="mx-5 cursor-pointer hover:opacity-80">Login</a>
-          </div>
+          </div class="py-2 md:py-0">
           <button type="button" class="px-5 py-2 bg-bmc-yellow rounded-full">
             Sign Up
           </button>
@@ -489,7 +506,7 @@
     <!-- section 2 -->
     <section class="section_2 w-screen flex-col font-circular">
       <div
-        class="workflow m-20 items-center justify-center grid grid-col-1 devide-y lg:grid-cols-3 lg:divide-x"
+        class="workflow m-5 md:m-20 items-center justify-center grid grid-col-1 devide-y lg:grid-cols-3 lg:divide-x"
       >
         <!-- workflow element 1 -->
         <div
@@ -709,7 +726,7 @@
     <!-- section 3 -->
     <section class="section_3 w-screen flex-col font-circular">
       <div
-        class="display-card-section-inner m-16 items-center justify-center grid grid-cols-1 lg:grid-cols-2 lg:devide-x"
+        class="display-card-section-inner m-8 md:m-16 items-center justify-center grid grid-cols-1 lg:grid-cols-2 lg:devide-x"
       >
         <!-- display card 1 -->
         <div class="display-card-wrapper m-1">
@@ -806,10 +823,10 @@
     <!-- section 3 end-->
     <!-- section 4 -->
     <section class="section_4 w-screen flex-col font-circular">
-      <div class="wishlist-advertise grid grid-cols-1 divide-y-3 m-28">
+      <div class="wishlist-advertise grid grid-cols-1 mx-5 my-20 md:m-28">
         <!-- wishlist advertise card 1 -->
         <div
-          class="wishlist-advertise-card w-full flex items-center justify-center lg:justify-start"
+          class="wishlist-advertise-card w-full flex items-center justify-center lg:justify-start mt-16"
         >
           <div
             class="wishlist-advertise-card-inner w-full lg:w-9/12 grid grid-cols-1 lg:grid-cols-5"
@@ -847,7 +864,7 @@
             </div>
 
             <div
-              class="card-content col-span-4 pl-10 text-3xl flex items-center relative"
+              class="card-content col-span-4 md:pl-10 text-3xl flex items-center relative"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -968,7 +985,7 @@
 
         <!-- wishlist advertise card 2 -->
         <div
-          class="wishlist-advertise-card w-full flex items-center justify-end mt-28"
+          class="wishlist-advertise-card w-full flex items-center justify-end mt-16"
         >
           <div
             class="wishlist-advertise-card-inner w-full lg:w-9/12 grid grid-cols-1 lg:grid-cols-5"
@@ -1006,7 +1023,7 @@
               </div>
             </div>
             <div
-              class="card-content col-span-4 pl-10 text-3xl flex items-center relative"
+              class="card-content col-span-4 md:pl-10 text-3xl flex items-center relative"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1132,7 +1149,7 @@
 
         <!-- wishlist advertise card 3 -->
         <div
-          class="wishlist-advertise-card w-full flex items-center justify-start mt-28"
+          class="wishlist-advertise-card w-full flex items-center justify-start mt-16"
         >
           <div
             class="wishlist-advertise-card-inner w-full lg:w-9/12 grid grid-cols-1 lg:grid-cols-5"
@@ -1170,7 +1187,7 @@
               </div>
             </div>
             <div
-              class="card-content col-span-4 pl-10 text-3xl flex items-center relative"
+              class="card-content col-span-4 md:pl-10 text-3xl flex items-center relative"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1368,7 +1385,7 @@
       class="section_6 w-screen font-circular flex items-center justify-center"
     >
       <div
-        class="section_6_inner w-full lg:w-8/12 py-20 px-10 md:px-16 lg:px-20 grid grid-cols-1 gap-5"
+        class="section_6_inner w-full lg:w-8/12 py-20 px-5 md:px-16 lg:px-20 grid grid-cols-1 gap-5"
       >
         <!-- faq box 1 -->
         <div
