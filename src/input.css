@@ -38,20 +38,23 @@
 .section_1_secondary_wishlist_cards .wishlist_card_1 {
   width: 381.58px;
   height: 125.688px;
-  transform: rotate(4.29deg) translateY(-110%);
   flex-shrink: 0;
+  animation: wishlist_card_1 500ms linear forwards
 }
 .section_1_secondary_wishlist_cards .wishlist_card_2 {
   width: 529.066px;
   height: 174.268px;
   transform: rotate(-2.06deg);
   flex-shrink: 0;
+  animation: wishlist_card_2 500ms linear forwards
+
 }
 .section_1_secondary_wishlist_cards .wishlist_card_3 {
   width: 381.58px;
   height: 125.688px;
-  transform: rotate(-6.114deg) translateY(115%);
   flex-shrink: 0;
+  animation: wishlist_card_3 500ms linear forwards
+
 }
 .decor1 {
   transform: translateY(-750%) translateX(1000%);
@@ -68,4 +71,61 @@
 }
 .workflow-line2 {
   transform: translateY(-250%) translateX(100%);
+}
+
+
+.workflow-svg {
+  fill: none;
+  stroke: #09d;
+  stroke-width: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.popUp{
+  animation: popup 500ms linear forwards
+}
+@keyframes popup{
+  from{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes wishlist_card_1 {
+  from{
+    transform: translateY(-80%);
+  }to{
+    transform: rotate(4.29deg) translateY(-110%);
+  }
+}
+@keyframes wishlist_card_2 {
+  from{
+    transform: translateX(0);
+  }to{
+    transform: rotate(-2.06deg) translateX(0);
+  }
+}
+@keyframes wishlist_card_3 {
+  from{
+    transform: translatey(100%);
+  }to{
+    transform: rotate(-6.114deg) translateY(115%);
+  }
 }
