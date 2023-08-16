@@ -1313,8 +1313,8 @@ video {
 .section_1_secondary_wishlist_cards .wishlist_card_1 {
   width: 381.58px;
   height: 125.688px;
-  transform: rotate(4.29deg) translateY(-110%);
   flex-shrink: 0;
+  animation: wishlist_card_1 500ms linear forwards
 }
 
 .section_1_secondary_wishlist_cards .wishlist_card_2 {
@@ -1322,13 +1322,14 @@ video {
   height: 174.268px;
   transform: rotate(-2.06deg);
   flex-shrink: 0;
+  animation: wishlist_card_2 500ms linear forwards
 }
 
 .section_1_secondary_wishlist_cards .wishlist_card_3 {
   width: 381.58px;
   height: 125.688px;
-  transform: rotate(-6.114deg) translateY(115%);
   flex-shrink: 0;
+  animation: wishlist_card_3 500ms linear forwards
 }
 
 .decor1 {
@@ -1366,6 +1367,10 @@ video {
   }
 }
 
+.popUp{
+  animation: popup 500ms linear forwards
+}
+
 @keyframes popup{
   from{
     transform: translateY(50px);
@@ -1378,8 +1383,34 @@ video {
   }
 }
 
-.popUp{
-  animation: popup 500ms linear forwards
+@keyframes wishlist_card_1 {
+  from{
+    transform: translateY(-80%);
+  }
+
+  to{
+    transform: rotate(4.29deg) translateY(-110%);
+  }
+}
+
+@keyframes wishlist_card_2 {
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: rotate(-2.06deg) translateX(0);
+  }
+}
+
+@keyframes wishlist_card_3 {
+  from{
+    transform: translatey(100%);
+  }
+
+  to{
+    transform: rotate(-6.114deg) translateY(115%);
+  }
 }
 
 .hover\:scale-105:hover {
