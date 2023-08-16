@@ -69,3 +69,38 @@
 .workflow-line2 {
   transform: translateY(-250%) translateX(100%);
 }
+
+
+.workflow-svg {
+  fill: none;
+  stroke: #09d;
+  stroke-width: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes popup{
+  from{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.popUp{
+  animation: popup 500ms linear forwards
+}

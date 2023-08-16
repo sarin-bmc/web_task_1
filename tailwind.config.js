@@ -21,8 +21,21 @@ module.exports = {
       },
       fontFamily:{
         'circular':['Circular','sans-serif']
+      },
+      animation:{
+        fadeIn: "fadeIn 1s ease-in forwards",
+        popUp: "popUp 1s ease-in forwards",
+      },
+      keyframes:{
+        fadeIn:{
+          "0%":{opacity:0},
+          "100%":{opacity:1}
+        }
       }
     },
+  },
+  variants:{
+    animation:["motion-safe"]
   },
   plugins: [],
 }
