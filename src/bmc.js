@@ -1,3 +1,4 @@
+// FAQ toggle
 const toggleFaq = (boxId) => {
   var x = document.getElementById(boxId);
   box = document.getElementById(boxId);
@@ -16,6 +17,8 @@ const toggleFaq = (boxId) => {
   toggleButton.getElementsByClassName("faq-button-add")[0].classList.remove("hidden");
   return;
 };
+
+// nav toggle for mobile view
 const toggleNav = ()=>{
   var toggleIcon = document.getElementById('toggle_icon');
   var navbar = document.getElementsByClassName('navbar-inner')[0];
@@ -94,3 +97,17 @@ const pop_up = document.querySelectorAll(".pop-up");
 pop_up.forEach((pop_up) =>{
   popupObserver.observe(pop_up);
 });
+
+// navbar show/hide on scroll
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.opacity = "1";
+  } else {
+    document.getElementById("navbar").style.top = "-20px";
+    document.getElementById("navbar").style.opacity = "0";
+  }
+  prevScrollpos = currentScrollPos;
+}
