@@ -1,15 +1,26 @@
+$(function () {
+  $(document).on("click", ".faq-box", function () {
+    $(this).children(".faq-box-description-wrapper").slideToggle();
+    if ($(this).children(".faq-box-description-wrapper").height() > 1) {
+      $(this)
+        .children(".faq-box-header")
+        .find(".faq-button-minus")
+        .addClass("hidden");
+      $(this)
+        .children(".faq-box-header")
+        .find(".faq-button-add")
+        .removeClass("hidden");
 
-$(function(){
-    $('#faq-box-1-button').on("click",()=>{
-        $('#faq-box-1').slideToggle(300);
-    })
-    $('#faq-box-2-button').on("click",()=>{
-        $('#faq-box-2').slideToggle(300);
-    })
-    $('#faq-box-3-button').on("click",()=>{
-        $('#faq-box-3').slideToggle(300);
-    })
-    $('#faq-box-4-button').on("click",()=>{
-        $('#faq-box-4').slideToggle(300);
-    })
+      return;
+    }
+    $(this)
+      .children(".faq-box-header")
+      .find(".faq-button-add")
+      .addClass("hidden");
+    $(this)
+      .children(".faq-box-header")
+      .find(".faq-button-minus")
+      .removeClass("hidden");
+    return;
+  });
 });
