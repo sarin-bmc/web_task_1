@@ -1390,11 +1390,11 @@
         <!-- faq box 1 -->
         <div
           class="faq-box border border-gray-200 rounded-[44px] grid grid-cols-1 h-fit pop-up"
-          id="faq-box-1"
+          
         >
           <div
             class="faq-box-header flex items-center justify-between px-3 py-3 text-[#332E3C] group cursor-pointer"
-            onclick="toggleFaq('faq-box-1')"
+            id="faq-box-1-button"
           >
             <div class="faq-box-header-content font-bold text-lg md:text-2xl px-5">
               Who uses Buy Me a Coffee?
@@ -1446,7 +1446,7 @@
               </svg>
             </button>
           </div>
-          <div class="faq-box-description-wrapper w-full hidden">
+          <div class="faq-box-description-wrapper w-full hidden" id="faq-box-1">
             <div
               class="faq-box-description flex items-center justify-center px-3 py-3 text-[#4D4A53] font-normal text-base md:text-xl"
             >
@@ -1462,11 +1462,10 @@
         <!-- faq box 2 -->
         <div
           class="faq-box border border-gray-200 rounded-[44px] grid grid-cols-1 pop-up "
-          id="faq-box-2"
         >
           <div
             class="faq-box-header flex items-center justify-between px-3 py-3 text-[#332E3C] group cursor-pointer"
-            onclick="toggleFaq('faq-box-2')"
+            id="faq-box-2-button"
             
           >
             <div class="faq-box-header-content font-bold text-lg md:text-2xl px-5">
@@ -1519,7 +1518,7 @@
               </svg>
             </button>
           </div>
-          <div class="faq-box-description-wrapper w-full hidden">
+          <div class="faq-box-description-wrapper w-full hidden" id="faq-box-2">
             <div
               class="faq-box-description flex items-center justify-center px-3 py-3 text-[#4D4A53] font-normal text-base md:text-xl"
             >
@@ -1535,11 +1534,10 @@
         <!-- faq box 3 -->
         <div
           class="faq-box border border-gray-200 rounded-[44px] grid grid-cols-1 pop-up"
-          id="faq-box-3"
         >
           <div
             class="faq-box-header flex items-center justify-between px-3 py-3 text-[#332E3C] group cursor-pointer"
-            onclick="toggleFaq('faq-box-3')"
+            id="faq-box-3-button"
           >
             <div class="faq-box-header-content font-bold text-lg md:text-2xl px-5">
               Do I have complete ownership of my supporters?
@@ -1591,7 +1589,7 @@
               </svg>
             </button>
           </div>
-          <div class="faq-box-description-wrapper w-full hidden">
+          <div class="faq-box-description-wrapper w-full hidden" id="faq-box-3">
             <div
               class="faq-box-description flex items-center justify-center px-3 py-3 text-[#4D4A53] font-normal text-base md:text-xl"
             >
@@ -1607,11 +1605,10 @@
         <!-- faq box 4 -->
         <div
           class="faq-box border border-gray-200 rounded-[44px] grid grid-cols-1 pop-up"
-          id="faq-box-4"
         >
           <div
             class="faq-box-header flex items-center justify-between px-3 py-3 text-[#332E3C] group cursor-pointer"
-            onclick="toggleFaq('faq-box-4')"
+            id="faq-box-4-button"
           >
             <div class="faq-box-header-content font-bold text-lg md:text-2xl px-5">
               How do I contact Buy Me a Coffee?
@@ -1663,7 +1660,7 @@
               </svg>
             </button>
           </div>
-          <div class="faq-box-description-wrapper w-full hidden">
+          <div class="faq-box-description-wrapper w-full hidden" id="faq-box-4">
             <div
               class="faq-box-description flex items-center justify-center px-3 py-3 text-[#4D4A53] font-normal text-base md:text-xl"
             >
@@ -1783,5 +1780,7 @@
     <!-- footer end -->
     <!-- javascript -->
     <script src="./bmc.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./jquery.js"></script>
   </body>
 </html>
